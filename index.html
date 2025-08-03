@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Personal Daily Calorie Tracker</h1>
+        <form id="calorie-form">
+            <label for="weight">Weight (lbs):</label>
+            <input type="number" id="weight" required />
+
+      <label for="height">Height (in):</label>
+    <input type="number" id="height" required />
+      <label for="age">Age:</label>
+      <input type="number" id="age" required />
+    
+      <label for="sex">Sex:</label>
+      <select id="sex" required>
+        <option value="">Select</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+        </form>
+    </div>
+    <div class="exercise-search-container">
+            <div id="Monday_Exercise">Search for your Exercise</div>
+            <input type="text" id="Monday_Select" required />
+            <div id="Monday_Result"></div>
+        </div>
+    </div>
+    <div class="container" id="container3">
+        <div id="Day">Monday
+            <div id="Monday_Cal"></div>
+            <div id="Monday_Exercise">Exercise
+                <label for="monday-input">Calories burned from exercise</label>
+                <input type="number" id="monday-input" placeholder="Enter Calories" />
+                <button onclick="addCalories('monday')">Enter</button>
+                <p id="monday-total"></p>
+            </div>
+        </div>
+        <div id="Day">Tuesday
+            <div id="Tuesday_Cal"></div>
+            <div id="Tuesday_Exercise">Exercise
+                <label for="tuesday-input">Calories burned from exercise</label>
+                <input type="number" id="tuesday-input" placeholder="Enter Calories" />
+                <button onclick="addCalories('tuesday')">Enter</button>
+                <p id="tuesday-total"></p>
+            </div>
+        </div>
+        <div id="Day">Wednesday
+            <div id="Wednesday_Cal"></div>
+            <div id="Wednesday_Exercise">Exercise
+                <label for="wednesday-input">Calories burned from exercise</label>
+                <input type="number" id="wednesday-input" placeholder="Enter Calories" />
+                <button onclick="addCalories('wednesday')">Enter</button>
+                <p id="wednesday-total"></p>
+            </div>
+        </div>
+        <div id="Day">Thursday
+            <div id="Thursday_Cal"></div>
+            <div id="Thursday_Exercise">Exercise
+                <label for="thursday-input">Calories burned from exercise</label>
+                <input type="number" id="thursday-input" placeholder="Enter Calories" />
+                <button onclick="addCalories('thursday')">Enter</button>
+                <p id="thursday-total"></p>
+            </div>
+        </div>
+        <div id="Day">Friday
+            <div id="Friday_Cal"></div>
+            <div id="Friday_Exercise">Exercise
+                <label for="friday-input">Calories burned from exercise</label>
+                <input type="number" id="friday-input" placeholder="Enter Calories" />
+                <button onclick="addCalories('friday')">Enter</button>
+                <p id="friday-total"></p>
+            </div>
+        </div>
+        <div id="Day">Saturday
+            <div id="Saturday_Cal"></div>
+            <div id="Saturday_Exercise">Exercise
+                <label for="saturday-input">Calories burned from exercise</label>
+                <input type="number" id="saturday-input" placeholder="Enter Calories" />
+                <button onclick="addCalories('saturday')">Enter</button>
+                <p id="saturday-total"></p>
+            </div>
+        </div>
+        <div id="Day">Sunday
+            <div id="Sunday_Cal"></div>
+            <div id="Sunday_Exercise">Exercise
+                <label for="sunday-input">Calories burned from exercise</label>
+                <input type="number" id="sunday-input" placeholder="Enter Calories" />
+                <button onclick="addCalories('sunday')">Enter</button>
+                <p id="sunday-total"></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
