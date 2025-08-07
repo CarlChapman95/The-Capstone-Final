@@ -13,8 +13,7 @@ const exerciseCalories = {
 function getCaloriesBurned(activity) {
 $.ajax({
     method: 'GET',
-    url: 'https://api.api-ninjas.com/v1/caloriesburned?activity=' + activity,
-    headers: { 'X-Api-Key': 'IutftG3Aph5/vSlfraZSbw==gageCUIXswz2MjjH'},
+    url: url: '/api/caloriesburned?activity=' + activity,
     contentType: 'application/json',
     success: function(result) {
         console.log(result);
