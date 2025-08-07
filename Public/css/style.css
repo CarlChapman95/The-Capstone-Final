@@ -1,14 +1,13 @@
 body {
-    background-image: (url(/images/Background\ Exercise.jpg));
+    background-image: url('/images/Background\ Exercise.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     position: relative;
     min-height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -36,10 +35,29 @@ h1 {
 }
 
 .exercise-search-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  margin-bottom: 40px;
+  padding: 20px;
+  color: #fff; 
+}
+.exercise-search-container label {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #fff; /* bright label text */
+}
+
+.exercise-search-container input {
+  padding: 10px;
+  width: 250px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
 }
 
 #result {
@@ -62,11 +80,12 @@ h1 {
 
 .result-entry {
     flex: 1 1 200px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
     padding: 10px;
     box-sizing: border-box;
     border-radius: 6px;
     background-color: #f9f9f9;
+    color: #000000;
 }
 
 #container3 {
@@ -97,4 +116,10 @@ h1 {
         align-items: center;
         justify-content: center;
     }   
+}
+
+@media (max-width: 600px) {
+  .exercise-search-container input {
+    width: 80%;
+  }
 }

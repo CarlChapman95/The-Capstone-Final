@@ -24,5 +24,6 @@ app.get('/api/caloriesburned', async (req,res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+    console.log(`Server running at http://localhost:${PORT}`);
+    console.log('To STOP server, press CTRL + C');
 });
