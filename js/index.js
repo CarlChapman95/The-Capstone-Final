@@ -13,7 +13,7 @@ const exerciseCalories = {
 function getCaloriesBurned(activity) {
 $.ajax({
     method: 'GET',
-    url: url: '/api/caloriesburned?activity=' + activity,
+    url: '/api/caloriesburned?activity=' + activity,
     contentType: 'application/json',
     success: function(result) {
         console.log(result);
